@@ -33,6 +33,14 @@ def test_uncovered_requirement_is_reported():
     assert result["coverage"] == 50.0
     assert trace_check.has_problems(result)
 
+def test_duplicate_requirement_ids_do_not_inflate_coverage():
+    result = trace_check.build_trace(
+        [make_req("R1"), make_req("R1")],
+        [make_test("T1", "R1")],
+    )
+    assert result["duplicate_reqs"] == ["R1"]
+    assert result["coverage"] == 100.0
+
 
 def test_one_test_can_cover_several_requirements():
     result = trace_check.build_trace([make_req("R1"), make_req("R2")], [make_test("T1", "R1; R2")])
