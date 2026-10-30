@@ -1,0 +1,11 @@
+req_id,description,priority
+REQ-001,User can upload a completed form as PDF,High
+REQ-002,System records the upload date and the user who uploaded the form,High
+REQ-003,System calculates the due date for each form type,High
+REQ-004,System flags forms that are within 3 days of their due date,High
+REQ-005,System marks forms past their due date as overdue,High
+REQ-006,Supervisor can view all overdue forms on one screen,Medium
+REQ-007,User can search forms by form type and date range,Medium
+REQ-008,System keeps an audit log of every view and edit,High
+REQ-009,Uploaded forms are retained for the configured retention period,Medium
+REQ-010,Error message appears when an upload is not a PDF,Low

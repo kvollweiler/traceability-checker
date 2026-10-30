@@ -1,0 +1,10 @@
+test_id,title,req_ids,status
+TC-001,Upload a valid PDF form,REQ-001;REQ-002,pass
+TC-002,Upload a Word file and confirm the error message,REQ-010,pass
+TC-003,Due date is calculated for each form type,REQ-003,pass
+TC-004,Form due in 2 days shows a warning flag,REQ-004,fail
+TC-005,Form past due shows as overdue,REQ-005,pass
+TC-006,Supervisor overdue dashboard lists all overdue forms,REQ-005;REQ-006,not run
+TC-007,Search by form type and date range,REQ-007,pass
+TC-008,Viewing a form adds an audit log entry,REQ-008,pass
+TC-009,Export overdue list to CSV,REQ-011,not run
