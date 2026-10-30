@@ -73,9 +73,9 @@ def build_trace(requirements, tests):
         req_id for req_id, linked in matrix.items()
         if linked and any(status != "pass" for _, status in linked)
     ]
-    total_unique = len(matrix)
-covered = total_unique - len(uncovered)
-coverage = (covered / total_unique * 100) if total_unique else 0.0
+      total_unique = len(matrix)
+    covered = total_unique - len(uncovered)
+    coverage = (covered / total_unique * 100) if total_unique else 0.0
 
     return {
         "matrix": matrix,
