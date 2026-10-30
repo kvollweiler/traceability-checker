@@ -97,4 +97,4 @@ The tests run automatically on every push through GitHub Actions (`.github/workf
 
 ## About this project
 
-Developed with Claude as a pair-programming assistant. All sample data is fictional.
+All sample data is fictional.
